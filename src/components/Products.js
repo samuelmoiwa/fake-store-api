@@ -19,11 +19,10 @@ function Products() {
   return (
   <div>
     { loading ? <h1>Loading...</h1> : <h1>Products</h1>}
-
     { products.map((product) => (
       <div className='products_layout'> 
         <div key={product.id} className='product_card'>
-          <div className='product_image'> <img src={ product.image} alt='#'/> </div>
+          <div className='product_image'>  </div>
           <h1 className='product_title'> title </h1>
           <h1 className='product_category'> category </h1>
           <h1 className='product_price'> price </h1>
